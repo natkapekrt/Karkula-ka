@@ -1,0 +1,99 @@
+.App-header {
+    background-color: #c46262;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "dis1 dis1 dis1 dis1"
+    "dis dis dis dis"
+    "AC AC div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal";
+  }
+
+  .padButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(11, 10, 10);
+    color: rgb(238, 17, 17);
+    border: 1px solid;
+    cursor: pointer;
+    }
+    .dis {
+        grid-area: dis;
+        background-color: black;
+        text-align: right;
+        margin-top: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+      }
+    
+      .dis1 {
+        grid-area: dis1;
+        background-color: darkgray;
+        text-align: right;
+        height: 50%;
+        margin-top: 50px;
+        padding-right: 10px;
+        padding-top: 5px;
+        font-size: 20px;
+      }
+    
+      .AC {
+        grid-area: AC
+      }
+    
+      .zero-class {
+        grid-area: zero;
+      }
+    
+      .equal {
+        grid-area: equal;
+      }
+    
+      .dark-gray {
+        background-color: #333;
+      }
+    
+      .red {
+        background-color: rgb(15, 14, 14);
+      }
+    
+      .blue {
+        background-color: rgb(105, 105, 108);
+      }
+    
+      ::placeholder {
+        color: white;
+      }
+      .total {
+        color: rgb(205, 14, 148);
+        padding: 5px 20px;
+      }
+      .dis input {
+        width: 90%;
+        color: white;
+        background-color: rgb(21, 20, 20);
+        text-align: right;
+        padding: 10px 20px;
+        margin-right: 5px;
+        font-size: 20px;
+      }
+      .padButton:hover {
+        border: 1px solid rgb(253, 17, 162);
+        background-color: rgb(18, 16, 16);
+      }

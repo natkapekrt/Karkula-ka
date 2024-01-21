@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="App-header">
+        <div class="container">
+          <div id="calculator" class="grid">
+            <div id="secondaryDisplay" style="color: white" class="dis1"></div>
+            <div id="display" style="color: white" class="dis"></div>          
+            <div onClick="clearDisplay()" id="clear"  class="padButton AC red">AC</div>
+            <div onClick="updateDisplay('divide')" id="divide"  class="padButton div" >/</div>
+            <div onClick="updateDisplay('multiply')" id="multiply"  class="padButton times">x</div>
+            <div onClick="updateDisplay(7)" id="seven"  class="padButton seven dark-gray">7</div>
+            <div onClick="updateDisplay(8)" id="eight"  class="padButton eight dark-gray">8</div>
+            <div onClick="updateDisplay(9)" id="nine"  class="padButton nine dark-gray">9</div>
+            <div onClick="updateDisplay('subtract')" id="subtract"  class="padButton minus">-</div>
+            <div onClick="updateDisplay(4)" id="four"  class="padButton four dark-gray">4</div>
+            <div onClick="updateDisplay(5)" id="five"  class="padButton five dark-gray">5</div>
+            <div onClick="updateDisplay(6)" id="six"  class="padButton six dark-gray">6</div>
+            <div onClick="updateDisplay('add')" id="add"  class="padButton plus">+</div>
+            <div onClick="updateDisplay(1)" id="one"  class="padButton one dark-gray">1</div>
+            <div onClick="updateDisplay(2)" id="two"  class="padButton two dark-gray">2</div>
+            <div onClick="updateDisplay(3)" id="three"  class="padButton three dark-gray">3</div>
+            <div onClick="updateDisplay('equals')" id="equals"  class="padButton equal blue">=</div>
+            <div onClick="updateDisplay(0)" id="zero"  class="padButton zero-class dark-gray">0</div>
+            <div onClick="updateDisplay('decimal')" id="decimal"  class="padButton dot dark-gray">.</div>
+          </div>
+        </div>
+      </header>
+    
+</body>
+</html>
